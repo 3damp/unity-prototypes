@@ -42,8 +42,6 @@ function createUnityInstance(e, r, t) {
         }
     }
     function i(e, r) {
-        const t1 = window.innerHeight+"px";
-        e.style.height = t1;
         if ("symbolsUrl" != e) {
             var n = c.downloadProgress[e];
             n || (n = c.downloadProgress[e] = {
