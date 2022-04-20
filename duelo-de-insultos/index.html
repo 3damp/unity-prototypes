@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Duelo de insultos 2</title>
+    <meta property="og:image" content="https://3damp.github.io/unity-prototypes/duelo-de-insultos/image.png">
+    <meta property="og:title" content="Duelo de insultos">
+    <meta property="og:description" content="Own recreation of The Monkey Island's insult fight.">
+    <title>Duelo de insultos</title>
     <link rel="shortcut icon" href="../TemplateData/favicon.ico">
     <link rel="stylesheet" href="../TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1066 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +23,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Duelo de insultos 2</div>
+        <div id="unity-build-title">Duelo de insultos</div>
       </div>
     </div>
     <script>
@@ -56,14 +59,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Insultos.loader.js";
+      var loaderUrl = "./loader.js";
       var config = {
-        dataUrl: buildUrl + "/Insultos.data",
-        frameworkUrl: buildUrl + "/Insultos.framework.js",
-        codeUrl: buildUrl + "/Insultos.wasm",
+        dataUrl: buildUrl + "/game.data",
+        frameworkUrl: buildUrl + "/game.framework.js",
+        codeUrl: buildUrl + "/game.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "3DAMP",
-        productName: "Duelo de insultos",
+        productName: "_productName",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
