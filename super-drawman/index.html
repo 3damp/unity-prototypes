@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Super Drawman</title>
+    <meta property="og:image" content="./image.png">
+    <meta property="og:title" content="Super Drawman">
+    <meta property="og:description" content="A platform game prototype.">
+    <title>Super Drawman</title>
     <link rel="shortcut icon" href="../TemplateData/favicon.ico">
     <link rel="stylesheet" href="../TemplateData/style.css">
   </head>
@@ -56,14 +59,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Drawman.loader.js";
+      var loaderUrl = "./loader.js";
       var config = {
-        dataUrl: buildUrl + "/Drawman.data",
-        frameworkUrl: buildUrl + "/Drawman.framework.js",
-        codeUrl: buildUrl + "/Drawman.wasm",
+        dataUrl: buildUrl + "/game.data",
+        frameworkUrl: buildUrl + "/game.framework.js",
+        codeUrl: buildUrl + "/game.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "pec2-juego-plataformas",
+        companyName: "3DAMP",
+        productName: "_productName",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
