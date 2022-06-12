@@ -2,6 +2,6 @@
 ## [Duelo de insultos](https://3damp.github.io/unity-prototypes/duelo-de-insultos/)
 Modified version of Monkey Island's insults fight. (Spanish)
 ## [Super Drawman](https://3damp.github.io/unity-prototypes/super-drawman/)
-Platform game.
+Platform game prototype.
 ## [Defense of Rogir](https://3damp.github.io/unity-prototypes/defense-of-rogir/)
-Tower Defense & Rogue like game.
+Simple Tower Defense game with Rogue-like mechanics.
