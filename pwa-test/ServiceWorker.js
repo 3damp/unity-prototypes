@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-delme_pwa_test-1.0";
 const contentToCache = [
-    "Build/pwa game.loader.js",
-    "Build/pwa game.framework.js.br",
-    "Build/pwa game.data.br",
-    "Build/pwa game.wasm.br",
+    "Build/pwa-game-no-comp.loader.js",
+    "Build/pwa-game-no-comp.framework.js",
+    "Build/pwa-game-no-comp.data",
+    "Build/pwa-game-no-comp.wasm",
     "TemplateData/style.css"
 
 ];
