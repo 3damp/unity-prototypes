@@ -9,6 +9,8 @@
     <title>Super Drawman</title>
     <link rel="shortcut icon" href="../TemplateData/favicon.ico">
     <link rel="stylesheet" href="../TemplateData/style.css">
+    <link rel="canonical" href="https://3damp.github.io/unity-prototypes/super-drawman-old/" />
+    <link rel="manifest" href="/unity-prototypes/super-drawman-old/manifest.webmanifest" />
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -106,5 +108,13 @@
       };
       document.body.appendChild(script);
     </script>
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/unity-prototypes/super-drawman-old/sw.js',
+          {scope: '/unity-prototypes/super-drawman-old/'}
+        )
+      }
+  </script>
   </body>
 </html>

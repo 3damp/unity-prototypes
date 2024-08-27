@@ -1,0 +1,21 @@
+{
+  "name": "Super Drawman",
+  "short_name": "Drawman",
+  "description": "Platform game",
+ 
+  "scope": "/unity-prototypes/super-drawman-old/",
+  "start_url": "/unity-prototypes/super-drawman-old/",
+ 
+  "background_color": "#222",
+  "theme_color": "#ccc",
+ 
+  "display": "standalone", 
+ 
+  "icons": [
+      {
+        "src": "/unity-prototypes/super-drawman-old/image.png",
+        "type": "image/png",
+        "sizes": "700x700"
+      }
+  ]
+}
