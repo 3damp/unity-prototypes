@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-delme_pwa_test-1.0";
+const cacheName = "DefaultCompany-delme_pwa_test-1.1";
 const contentToCache = [
     "Build/pwa-game-no-comp.loader.js",
     "Build/pwa-game-no-comp.framework.js",
