@@ -7,3 +7,5 @@ Platform game prototype.
 Simple Tower Defense game with Rogue-like mechanics.
 ## [Rally Game](https://3damp.github.io/unity-prototypes/rally-game/)
 Simple Time Trial Racing game in 3D.
+## [PWA Sample](https://3damp.github.io/unity-prototypes/pwa-test/)
+Simple Game that can be installed and played offline.
