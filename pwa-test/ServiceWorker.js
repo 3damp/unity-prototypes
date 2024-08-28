@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-Arrow Race-1.1";
+const cacheName = "DefaultCompany-Arrow Race-1.2";
 const contentToCache = [
     "Build/game.loader.js",
     "Build/game.framework.js",
