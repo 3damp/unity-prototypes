@@ -17,7 +17,7 @@ self.addEventListener('install', function (e) {
           cacheNames.map((currentCacheName) => {
             if (currentCacheName !== cacheName) {
               console.log('[Service Worker] Removing old cache:', currentCacheName);
-              return caches.delete(cacheName);
+              return caches.delete(currentCacheName);
             }
           })
         );
@@ -49,8 +49,8 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         cacheNames.map((currentCacheName) => {
           if (currentCacheName !== cacheName) {
-            console.log('[Service Worker] Removing old cache:', currentCacheName);
-            return caches.delete(cacheName);
+            console.log('[Service Worker] Removing old cache (a):', currentCacheName);
+            return caches.delete(currentCacheName);
           }
         })
       );
