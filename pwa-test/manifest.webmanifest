@@ -1,6 +1,6 @@
 {
-    "name": "delme_pwa_test",
-    "short_name": "delme_pwa_test",
+    "name": "Arrow Race",
+    "short_name": "Arrow Race",
     "start_url": "index.html",
     "display": "fullscreen",
     "background_color": "#231F20",
