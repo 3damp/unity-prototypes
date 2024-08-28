@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | delme_pwa_test</title>
-    <link rel="shortcut icon" href="/unity-prototypes/pwa-test/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="/unity-prototypes/pwa-test/TemplateData/style.css">
-    <link rel="manifest" href="/unity-prototypes/pwa-test/manifest.webmanifest">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div id="unity-container">
@@ -22,7 +22,7 @@
     <script>
       window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("/unity-prototypes/pwa-test/ServiceWorker.js");
+          navigator.serviceWorker.register("ServiceWorker.js");
         }
       });
 
@@ -56,13 +56,13 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "/unity-prototypes/pwa-test/Build";
-      var loaderUrl = buildUrl + "/pwa-game-no-comp.loader.js";
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/game.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/pwa-game-no-comp.data",
-        frameworkUrl: buildUrl + "/pwa-game-no-comp.framework.js",
-        codeUrl: buildUrl + "/pwa-game-no-comp.wasm",
+        dataUrl: buildUrl + "/game.data",
+        frameworkUrl: buildUrl + "/game.framework.js",
+        codeUrl: buildUrl + "/game.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "delme_pwa_test",
