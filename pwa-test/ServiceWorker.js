@@ -31,3 +31,18 @@ self.addEventListener('fetch', function (e) {
       return response;
     })());
 });
+self.addEventListener('activate', (event) => {
+  console.log('[Service Worker] Activate');
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((currentCacheName) => {
+          if (currentCacheName !== cacheName) {
+            console.log('[Service Worker] Removing old cache:', currentCacheName);
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
