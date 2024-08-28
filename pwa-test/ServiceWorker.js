@@ -12,6 +12,17 @@ self.addEventListener('install', function (e) {
     console.log('[Service Worker] Install');
     
     e.waitUntil((async function () {
+      caches.keys().then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((currentCacheName) => {
+            if (currentCacheName !== cacheName) {
+              console.log('[Service Worker] Removing old cache:', currentCacheName);
+              return caches.delete(cacheName);
+            }
+          })
+        );
+      })
+
       const cache = await caches.open(cacheName);
       console.log('[Service Worker] Caching all: app shell and content');
       await cache.addAll(contentToCache);
