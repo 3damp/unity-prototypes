@@ -21,15 +21,8 @@
     </div>
     <script>
       window.addEventListener("load", function () {
-        console.log('[Service Worker] Load');
-        
         if ("serviceWorker" in navigator) {
-          try {
-            navigator.serviceWorker.register("ServiceWorker.js");
-            console.log('[Service Worker] registered');
-          } catch (error) {
-            console.log('[Service Worker] registration failed:', error);
-          }
+          navigator.serviceWorker.register("ServiceWorker.js");
         }
       });
 
